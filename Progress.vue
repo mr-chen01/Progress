@@ -14,6 +14,7 @@
   :style="{fontSize:processTextSize+'px'}"
     v-if="!text_inside "
     >
+    <!-- --template--模板元素，页面加载不会呈现，可以用js控制 -->
       <template v-if="!status">{{ percentage }}%</template>
       <i v-else class="icon" :class='iconClass'></i>
     </div>
